@@ -1,0 +1,82 @@
+<!-- <html>
+    <head>
+      <title>NJS Games</title>
+    </head>
+    <body>
+
+
+<a href="index.html">
+    Home
+</a>
+&nbsp;
+<a href="pipefly.html">
+    Games
+</a>
+&nbsp;
+<a href="social.html">
+    Social
+</a>
+
+<hr></hr>
+
+<h1>NJS Games</h1>
+
+<p>
+    Welcome to NJS Games!
+</p>
+
+<p>
+    This will show all my games!
+</p>
+
+<img src="mph.png" /> -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NJS Games</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">NJS Games</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>  
+        <li><a href="">Pipe Fly</a></li>
+        <li><a href="spacejump/spacejump.html">Space Jump</a></li>
+        <li><a href="">Cactus Hunt</a></li>
+      </ul>
+      <div class="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <script>
+      var menu = document.querySelector(".menu");
+      var nav_links = document.querySelector(".nav-links");
+      var overlay = document.querySelector(".overlay");
+
+      menu.addEventListener("click", () => {
+        // console.log("it's working");
+        nav_links.classList.toggle("show");
+        overlay.classList.toggle("black-overlay");
+      })
+
+      overlay.addEventListener("click", () => {
+        nav_links.classList.toggle("show");
+        overlay.classList.toggle("black-overlay");
+      })
+    </script>
+  </body>
+
+</html>
+
+
