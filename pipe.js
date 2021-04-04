@@ -27,6 +27,14 @@ var bestScore
 var pipes
 var bestScore = 0
 var wingAngle
+var jumpSound
+
+function preload()
+{
+    soundFormats('mp3', 'wav')
+
+    jumpSound = loadSound('assets/whoosh.wav')
+}
 
 function init()
 {
@@ -214,6 +222,7 @@ function keyPressed()
         {
             jump = true;
             wingAngle = PI / 3
+            jumpSound.play();
         }
 }
 

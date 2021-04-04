@@ -27,6 +27,13 @@ var bestScore
 var pipes  
 var bestScore = 0
 var wingAngle 
+var jumpSound
+
+function preload()
+{
+    soundFormats('wav', 'mp3');
+    jumpSound = loadSound('assets/jump.wav')
+}
 
 function init() 
 {
@@ -218,6 +225,7 @@ function keyPressed()
         {
             jump = true;
             wingAngle = PI / 3
+            jumpSound.play();
         }
 }
 
